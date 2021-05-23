@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website-single product</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" >
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- JavaScript Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" ></script>
+   
+</head>
+<body>
+    <!--------------Navbar--------------------->
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+            <img src="../img/logo.webp" alt="" class="logo">
+            <input type="text" class="form-control">
+            <span class="input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i>Cart</a></li>
+                <li><a href="#"><i class="fa fa-sign-in"></i>Log In</a></li>
+                <li><a href="#"><i class="fa fa-user-plus"></i>Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+    <!------------------single products------------------->
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="slider">
+                        <div id="product-slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../img/single-p-pic1.jpg" class="d-block w-100" >
+                            
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/single-p-pic2.jpg" class="d-block w-100" >
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/single-p-pic3.jpg" class="d-block w-100" >
+                              </div> 
+                              <button class="carousel-control-prev" type="button" data-bs-target="#product-slider"  data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#product-slider"  data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>   
+                            </div>
+                          </div>
+                         
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+<!-------------------footer----------------------->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <h1>Useful Links</h1>
+                    <p>Privacy policy</p>
+                    <p>Terms of use</p>
+                    <p>Return policy</p>
+                    <p>Discount Cupons</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h1>Company</h1>
+                    <p>About US</p>
+                    <p>Contact US</p>
+                    <p>Carrer</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h1>Follow Us  On</h1>
+                    <p><i class="fa fa-facebook-official"></i>  Facebook</p>
+                    <p><i class="fa fa-youtube-play"></i>  Youtube</p>
+                    <p><i class="fa fa-linkedin"></i> Linkedin</p>
+                    <p><i class="fa fa-twitter"></i>  Twitter</p>
+                </div>
+                <div class="col-md-3 footer-image text-center">
+                    <h1>Download App</h1>
+                    <img src="../img/footer-img.png" >
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">
+                Made By <i class="fa fa-heart-o"></i> Bipu
+            </p>
+        </div>
+    </section>
+
+    <!---------------------------Btn-Section------------------------>
+    <script>
+        function openmenu()
+        {
+            document.getElementById("sub-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+        }
+        function closemenu()
+        {
+            document.getElementById("sub-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="block";
+            document.getElementById("close-btn").style.display="none";
+        }
+    </script>
+
+</body>
